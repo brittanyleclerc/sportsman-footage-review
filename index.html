@@ -13,7 +13,7 @@ figure{margin:12px 0 18px}figure img{width:100%;border:1px solid #cfd6de;border-
 ul{margin:6px 0 6px 0}li{margin:3px 0}
 </style></head><body>
 <h1>Sportsman on DOCK 2 – complete frame review, progress report</h1>
-<div class="sub">Status as of Nov 23, 2026, early morning. All exported days, Nov 4–20, are scanned and reviewed. The low-resolution Nov 4–9 hours were captured by playback, and the detector is running on those frames now.</div>
+<div class="sub">Status as of Nov 23, 2026, early morning. All exported days, Nov 4–20, are scanned and reviewed. The low-resolution Nov 4–9 hours, nights included, were played back, scanned and checked: no new people, and nobody at night.</div>
 
 <div class="box"><b>Bottom line so far</b>
 <ul>
@@ -58,7 +58,7 @@ ul{margin:6px 0 6px 0}li{margin:3px 0}
 <tr><td>Nov 18</td><td>23.8 h (full day)</td><td>80,134</td><td>Nobody</td></tr>
 <tr><td>Nov 19</td><td>23.7 h (full day)</td><td>85,688</td><td><span class="tag clear">Owners</span> lowered the lift, aboard 1:49–2:07 PM</td></tr>
 <tr><td>Nov 20</td><td>23.9 h (full day)</td><td>86,154</td><td><span class="tag clear">Owners</span> trip, out 12:11 PM, back ~4:48 PM</td></tr>
-<tr><td>Nov 4–9, low-res hours</td><td colspan="2">Played in DW at 16x and captured (33,213 frames). The detector is running on them now.</td><td><span class="tag todo">IN PROGRESS</span></td></tr>
+<tr><td>Nov 4–9, low-res hours</td><td colspan="2">Played in DW at 16x and captured (33,213 frames), including every night from Nov 4/5 to Nov 8/9. 73 groups of person detections, all in daylight, all people already listed above.</td><td><span class="tag clear">Owners</span> nobody at night</td></tr>
 </table>
 
 <h3><span class="tag flag">CHECK</span> Missing hours on Nov 4–9</h3>
@@ -75,7 +75,10 @@ ul{margin:6px 0 6px 0}li{margin:3px 0}
 <li><b>Why:</b> DW keeps two copies, a sharp one and a blurry low-resolution one. At 4 AM on Nov 6, DW still plays video, but only the blurry copy. Export takes only the sharp copy, so those hours never reached the exports.</li>
 <li><b>Since when:</b> the sharp copy runs around the clock only from about 2:45 PM on Nov 9. The exports also changed then, from a key frame every ~8 s to every ~1.2 s. Both point to a recording-settings change around Nov 9. The Audit Trail would show who made it.</li>
 <li><b>Motion search note:</b> DW's motion search had an area filter on a small patch of water under the stern, so its motion marks said nothing about the boat. The filter was cleared. It is a search filter, not a camera setting. Across the whole picture, water and light trigger motion at night too, so motion marks alone can't clear the nights.</li>
-<li><b>Now running:</b> DW plays Nov 4, 4:30 PM to Nov 9, 3 PM at 16x. A script reads the video area of the screen twice a second (it sends no input), and the same person detector checks every saved frame. Each frame carries DW's own date and time.</li>
+<li><b>Done (Nov 23):</b> DW played Nov 4, 4:30 PM to Nov 9, 3 PM at 16x. A script read the video area of the screen about twice a second (it sent no input), and the same person detector checked all 33,213 frames. Each frame carries DW's own date and time.</li>
+<li><b>Nights:</b> each night from about 6 PM to 6 AM (Nov 4/5, 5/6, 6/7, 7/8, 8/9) was played and scanned. DW skipped the stretches it hadn't recorded, so each night came to roughly 2–3 hours of recorded clips. No person was detected in any night frame.</li>
+<li><b>Daytime:</b> 73 groups of detections, all matching people already described: the owners on Nov 4, 5 and 7, the Nov 6 lift crew, the Nov 9 visitor with the bucket (about 10:49–10:51 AM on the DOCK 2 clock), and the Nov 10 trip.</li>
+<li><b>Limit:</b> at 16x, one saved frame covers about 30 seconds of footage, so a visit shorter than that could be missed. Anyone who boarded, or worked at the boat for a minute or more, would show up.</li>
 </ul>
 
 
@@ -272,13 +275,13 @@ ul{margin:6px 0 6px 0}li{margin:3px 0}
 <h2>4. Anything suspicious</h2>
 <table>
 <tr><th>Item</th><th>What was found</th><th>Status</th></tr>
-<tr><td>Late-night activity</td><td>None in the exported footage. Every night-time detection on Nov 10–20 was checked: far-shore lights, rain over the control box (Nov 18), a heron on the motor cover (Nov 14, 16), the T-top at dawn, or the motor cover. The Nov 4–9 nights are being checked from the playback capture.</td><td><span class="tag clear">CLEAR</span></td></tr>
+<tr><td>Late-night activity</td><td>None in the exported footage. Every night-time detection on Nov 10–20 was checked: far-shore lights, rain over the control box (Nov 18), a heron on the motor cover (Nov 14, 16), the T-top at dawn, or the motor cover. The Nov 4–9 nights were checked from the low-resolution playback: nobody detected (a visit under about 30 seconds could be missed at 16x).</td><td><span class="tag clear">CLEAR</span></td></tr>
 <tr><td>Interruptions in the footage</td><td>
 <ul>
 <li>Recording server restarted Nov 9 at 10:46 AM.</li>
 <li>Dock cameras dropped repeatedly Nov 9, 11:27 AM – 12:43 PM.</li>
 <li>All three dock cameras disconnected Nov 14, 3:54–4:08 PM, right after a group of five unloaded on DOCK 3 and the owners stood under the Sportsman (3:46–3:55 PM). The DOCK 2 video itself shows no gap over 60 seconds then.</li>
-<li>The Nov 4–9 night hours are in DW only as the low-resolution copy, which export skips (now being checked by playback).</li>
+<li>The Nov 4–9 night hours are in DW only as the low-resolution copy, which export skips (checked by playback: nobody at night).</li>
 <li>Recording changed around Nov 9 (sharp copy around the clock from ~2:45 PM, different key-frame spacing): a possible settings change.</li>
 </ul>
 Who changed settings, if anyone, is only in the Audit Trail. The DW login on this computer is in the Advanced Viewers group, so the Audit Trail is hidden; a DW administrator has to open it.</td><td><span class="tag flag">CHECK</span></td></tr>
@@ -290,7 +293,6 @@ Who changed settings, if anyone, is only in the Audit Trail. The DW login on thi
 
 <h2>5. Still to do</h2>
 <ul>
-<li>Nov 4–9 low-resolution hours: captured; the detector is running on the frames, then an eye check.</li>
 <li>Audit Trail: a DW administrator opens Main Menu → Audit Trail and checks Nov 9 (about 9 AM – 4 PM), Nov 14 (3:30–4:30 PM), and any DOCK 1/2/3 recording or motion-setting changes.</li>
 <li>In DW:
   <ul>
