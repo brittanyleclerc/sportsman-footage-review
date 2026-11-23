@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Sportsman – complete frame review, progress report (Nov 4–20)</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;max-width:1180px;margin:24px auto;padding:0 18px;color:#1c2430;line-height:1.45}
+h1{font-size:26px;margin-bottom:4px}h2{margin-top:34px;border-bottom:2px solid #dde3ea;padding-bottom:4px}h3{margin:22px 0 6px}
+.sub{color:#5a6675}table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}
+td,th{border:1px solid #d5dbe3;padding:6px 8px;vertical-align:top;text-align:left}th{background:#f1f4f8}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:1px 7px;border-radius:9px;margin-right:4px}
+.unsure{background:#fff1c7;color:#7a5600}.clear{background:#dff3e4;color:#1d6b35}.flag{background:#fde0de;color:#9b1c13}.todo{background:#e4ecfb;color:#1f4a9b}
+figure{margin:12px 0 18px}figure img{width:100%;border:1px solid #cfd6de;border-radius:4px}.note{background:#f7f9fb;border-left:3px solid #c7d0da;padding:6px 10px;font-size:14px;color:#3b4654}figcaption{font-size:13px;color:#4a5562;margin-top:4px}
+.box{background:#f7f9fb;border:1px solid #dfe5ec;border-radius:6px;padding:10px 14px;margin:12px 0}
+ul{margin:6px 0 6px 0}li{margin:3px 0}
+</style></head><body>
+<h1>Sportsman on DOCK 2 – complete frame review, progress report</h1>
+<div class="sub">Status as of Nov 23, 2026, early morning. All exported days, Nov 4–20, are scanned and reviewed. The low-resolution Nov 4–9 hours were captured by playback, and the detector is running on those frames now.</div>
+
+<div class="box"><b>Bottom line so far</b>
+<ul>
+<li>Nobody was seen carrying a gaff off the Sportsman in any exported footage, Nov 4–20. Small items in someone's hand can't be ruled out at this resolution.</li>
+<li>People went aboard on these days: Nov 5 and 6 (work groups), Nov 10 (group fishing trip), <b>Nov 16 (a man in a light-blue tee, alone, 1:22–1:30 PM, went to the console)</b>, <b>Nov 19 (two men lowered the lift and went aboard, 1:49–2:07 PM)</b>, and Nov 20 (the owners' trip).</li>
+<li>People on the dock who didn't board: the owners on Nov 4 and 7, a visitor on Nov 9, two men and passers-by on Nov 14, a lift worker on Nov 16–17, and a man with a dog on Nov 20.</li>
+<li>No night-time activity in the exported footage: every night-time detection was a false alarm (lights, rain, a heron, the motor cover, the T-top).</li>
+<li><b>System logs:</b> the recording server restarted on Nov 9 at 10:46 AM, and the dock cameras dropped out repeatedly from 11:27 AM to 12:43 PM. All three dock cameras disconnected on Nov 14, 3:54–4:08 PM, right after a group of five unloaded on DOCK 3. Who changed settings, if anyone, is only in DW's Audit Trail, which needs an admin login.</li><li><b>Missing hours, explained:</b> for Nov 4–9, DW holds the night hours (and parts of each day) only as a blurry low-resolution copy, and DW's export skips that copy. The sharp recording runs around the clock only from about 2:45 PM on Nov 9. Those hours are now being checked by playing them in DW at 16x and running the detector on screen captures.</li><li><b>Possible settings change around Nov 9:</b> recording behaved differently before Nov 10 (sharp copy only part of the day, video encoded differently). That fits a recording-settings change on or near Nov 9, the day of the server restart. Only DW's Audit Trail can show who changed what, and the DW login on this computer is a viewer account, not an administrator.</li>
+<li>Most worth a follow-up: the Nov 16 light-blue-tee man (who was he, what did he do at the console), the Nov 19 pair (who were they), the Nov 10 trip (did the gaff come back), and the Nov 9 visitor.</li>
+</ul></div>
+
+<h2>1. How the review was done</h2>
+<ul>
+<li>Each day of DOCK 2 video was exported from DW Spectrum, without a timestamp overlay.</li>
+<li>An AI person detector (YOLOv8n, run locally on this computer) checked every keyframe:
+  <ul><li>Nov 10 onwards: about one frame every 1.2 seconds, 64,000–80,000 frames a day.</li>
+  <li>Nov 4–9: about one frame every 4–8 seconds, because the older footage is stored at lower detail.</li></ul></li>
+<li>Every detection near the boat was checked by eye.</li>
+<li>Known false alarms were set aside, with the strongest ones still spot-checked by eye: the grey motor cover (the detector reads it as a hooded person), a dock post, specks at the frame edge, and far-off lights.</li>
+<li>No face identification. People are described by clothing only. Anyone who isn't clearly the owners is marked <span class="tag unsure">UNSURE</span>.</li>
+</ul>
+
+<h2>2. Coverage and gaps in the footage</h2>
+<table>
+<tr><th>Day</th><th>Footage on the camera</th><th>Frames checked</th><th>Result</th></tr>
+<tr><td>Oct 30 – Nov 4, 4:30 PM</td><td>Earlier DW review</td><td>–</td><td>Lift empty. The Sportsman wasn't there yet.</td></tr>
+<tr><td>Nov 4</td><td>4:27 PM onwards</td><td>4,086</td><td><span class="tag clear">Owners</span> arrival and docking</td></tr>
+<tr><td>Nov 5</td><td><b>13.1 h of 24</b></td><td>11,686</td><td><span class="tag unsure">UNSURE</span> work/cleaning session, two men boarded</td></tr>
+<tr><td>Nov 6</td><td><b>13.2 h of 24</b></td><td>11,766</td><td><span class="tag unsure">UNSURE</span> dock worker; lift crew, one man boarded ~1 min</td></tr>
+<tr><td>Nov 7</td><td><b>12.9 h of 24</b></td><td>11,475</td><td>Two short visits, owners' outfits, nobody boarded</td></tr>
+<tr><td>Nov 8</td><td><b>11.9 h of 24</b></td><td>10,545</td><td>Nobody</td></tr>
+<tr><td>Nov 9</td><td><b>14.9 h of 24</b></td><td>38,713</td><td><span class="tag unsure">UNSURE</span> visitor on the dock ~5 min, didn't board</td></tr>
+<tr><td>Nov 10</td><td>23.9 h (full day)</td><td>64,684</td><td><span class="tag unsure">UNSURE</span> group fishing trip, out 9:36 AM, back ~3:25 PM</td></tr>
+<tr><td>Nov 11</td><td>23.9 h (full day)</td><td>73,248</td><td>Nobody</td></tr>
+<tr><td>Nov 12</td><td>23.9 h (full day)</td><td>79,986</td><td>Nobody</td></tr>
+<tr><td>Nov 13</td><td>23.9 h (full day)</td><td>73,612</td><td>Nobody</td></tr>
+<tr><td>Nov 14</td><td>23.5 h (to 11:30 PM; next export starts 11:55 PM)</td><td>58,223</td><td><span class="tag unsure">UNSURE</span> people on the dock by the stern, nobody boarded</td></tr>
+<tr><td>Nov 15</td><td>23.9 h (full day)</td><td>62,473</td><td>Nobody</td></tr>
+<tr><td>Nov 16</td><td>23.9 h (full day)</td><td>67,945</td><td><span class="tag unsure">UNSURE</span> lift worker; <b>light-blue-tee man aboard 1:22–1:30 PM</b></td></tr>
+<tr><td>Nov 17</td><td>23.6 h (full day)</td><td>79,045</td><td><span class="tag unsure">UNSURE</span> lift worker on the dock, nobody boarded</td></tr>
+<tr><td>Nov 18</td><td>23.8 h (full day)</td><td>80,134</td><td>Nobody</td></tr>
+<tr><td>Nov 19</td><td>23.7 h (full day)</td><td>85,688</td><td><span class="tag unsure">UNSURE</span> two men lowered the lift, aboard 1:49–2:07 PM</td></tr>
+<tr><td>Nov 20</td><td>23.9 h (full day)</td><td>86,154</td><td><span class="tag clear">Owners</span> trip, out 12:11 PM, back ~4:48 PM</td></tr>
+<tr><td>Nov 4–9, low-res hours</td><td colspan="2">Played in DW at 16x and captured (33,213 frames). The detector is running on them now.</td><td><span class="tag todo">IN PROGRESS</span></td></tr>
+</table>
+
+<h3><span class="tag flag">CHECK</span> Missing hours on Nov 4–9</h3>
+<ul>
+<li>From Nov 10 on, the camera holds a full 24 hours a day. On Nov 5–9 it holds only 12–15 hours.</li>
+<li>Daylight shows up about an hour into each export, so most of the missing time is overnight.</li>
+<li>The likeliest cause is the camera recording on motion only at night, so a still night leaves nothing to keep. A camera outage or a recording that was cut off would look the same in the export, though.</li>
+<li><b>Why it matters:</b> the exported video skips the unrecorded stretches, so for Nov 5–9 times below are "export labels", not clock times. Where an earlier DW check gave the real time, it's shown next to the label.</li>
+<li><b>Next step:</b> open Nov 5–9 in DW and note exactly where the timeline is blank. If a blank sits in the middle of a night when the camera usually records, treat it as suspicious.</li>
+</ul>
+<p><b>Update, Nov 22 (resolved):</b></p>
+<ul>
+<li><b>Test:</b> exporting Nov 6, 12:02–7:01 AM gave only 1 h 58 min of video.</li>
+<li><b>Why:</b> DW keeps two copies, a sharp one and a blurry low-resolution one. At 4 AM on Nov 6, DW still plays video, but only the blurry copy. Export takes only the sharp copy, so those hours never reached the exports.</li>
+<li><b>Since when:</b> the sharp copy runs around the clock only from about 2:45 PM on Nov 9. The exports also changed then, from a key frame every ~8 s to every ~1.2 s. Both point to a recording-settings change around Nov 9. The Audit Trail would show who made it.</li>
+<li><b>Motion search note:</b> DW's motion search had an area filter on a small patch of water under the stern, so its motion marks said nothing about the boat. The filter was cleared. It is a search filter, not a camera setting. Across the whole picture, water and light trigger motion at night too, so motion marks alone can't clear the nights.</li>
+<li><b>Now running:</b> DW plays Nov 4, 4:30 PM to Nov 9, 3 PM at 16x. A script reads the video area of the screen twice a second (it sends no input), and the same person detector checks every saved frame. Each frame carries DW's own date and time.</li>
+</ul>
+
+
+<h3>System logs: camera dropouts and server restart</h3>
+<p>DW's Event Log was checked read-only for Oct 26 – Nov 22, covering camera issues on every camera and all server events. Only the three dock cameras (DOCK 1, 2 and 3) had problems; no house camera did. That points to the dock's network or power link rather than the recording server.</p>
+<table>
+<tr><th>When</th><th>What the log says</th><th>Why it may matter</th></tr>
+<tr><td><b>Nov 9, 10:46:32 AM</b></td><td><b>Recording server started</b>, meaning it had been off or restarting before this.</td><td><span class="tag flag">CHECK</span> It came on the same morning as the unknown visitor (~10:10 AM on DOCK 3). The log doesn't say why it restarted or how long it was down.</td></tr>
+<tr><td><b>Nov 9, 11:27 AM – 12:43 PM</b></td><td>Repeated drops on all three dock cameras:
+  <ul><li>DOCK 2: connection "unexpectedly closed" at 11:27, 11:39 and 12:35.</li>
+  <li>DOCK 1: disconnected at 11:41 and 11:59.</li>
+  <li>DOCK 3: disconnected at 11:41, 12:18, 12:24 and 12:30.</li></ul></td><td><span class="tag flag">CHECK</span> About 75 minutes of unstable recording on the dock cameras, starting soon after the restart.</td></tr>
+<tr><td><b>Nov 14, 3:53–4:08 PM</b></td><td>DOCK 1 and DOCK 3 disconnected at 3:54 PM; DOCK 2 disconnected at 4:08 PM. The Nov 14 export holds about 30 minutes less than a full day.</td><td><span class="tag flag">CHECK</span> This started about 2 minutes after the earlier pass saw a group of five unloading on DOCK 3 at 3:52 PM. Nov 14 is still being scanned.</td></tr>
+<tr><td>Nov 10, 9:29–9:30 AM and 4:39 PM; Nov 11, 11:59 AM</td><td>Server "Storage Issue": not enough disk or network speed for recording to drive E:.</td><td>Possible dropped frames. These match the Nov 10 departure (9:36 AM) and return (~3:25–4:13 PM) windows.</td></tr>
+<tr><td>Nov 1, 4, 6, 11, 14 (other)</td><td>Short "RTP errors" (brief stream hiccups) on the dock cameras.</td><td>Common and usually harmless.</td></tr>
+</table>
+<p><b>Settings changes and who made them:</b> DW keeps an <b>Audit Trail</b> of every login (user name and computer address) and every change to camera, recording, motion or detection settings. This login doesn't have access to it: the System Administration and Audit Trail menu items aren't there, so it isn't an administrator account. Ask the system owner or installer to open <i>Main Menu → Audit Trail</i> for Oct 26 – Nov 22 and look for:</p>
+<ul>
+<li>logins around Nov 9, 10:00 AM – 1:00 PM and Nov 14, 3:30–4:30 PM;</li>
+<li>changes to DOCK 1, 2 or 3 recording or motion settings;</li>
+<li>anyone who deleted footage or turned recording off.</li>
+</ul>
+<p>The cameras' own web pages also keep reboot and settings logs, but they need the camera admin password.</p>
+<figure><img src="eventlog/2_server-events_oct26-nov22.jpg"><figcaption>DW Event Log, server events Oct 26 – Nov 22: server started Nov 9, 10:46 AM, and storage warnings on Nov 10–11.</figcaption></figure>
+<figure><img src="eventlog/1_dock2-camera-issues_nov1-22.jpg"><figcaption>DW Event Log, DOCK 2 camera issues Nov 1–22: disconnected Nov 14, 4:08 PM; repeated drops Nov 9 and Nov 11.</figcaption></figure>
+<figure><img src="eventlog/3_all-camera-issues_page1.jpg"><figcaption>All cameras, page 1: Nov 14 dock-camera disconnections (3:54–4:08 PM) and the Nov 9 DOCK 3 drops.</figcaption></figure>
+<figure><img src="eventlog/4_all-camera-issues_page2.jpg"><figcaption>All cameras, page 2: Nov 9 DOCK 1, 2 and 3 drops, 11:27 AM – 12:16 PM.</figcaption></figure>
+<figure><img src="eventlog/5_all-camera-issues_page3.jpg"><figcaption>All cameras, page 3: earlier short stream errors (Nov 1, 4, 6). Nothing logged Oct 26–31.</figcaption></figure>
+
+<h3>Short gaps between exports</h3>
+<ul>
+<li>Nov 4 ~11:53 PM – Nov 5 12:05 AM</li>
+<li>Nov 5 ~11:55 PM – Nov 6 12:04 AM</li>
+<li>Nov 13 11:50 PM – Nov 14 12:00 AM</li>
+</ul>
+<p>These are 10–15 minutes each. They are most likely just where one day's export ends and the next begins, but they haven't been checked yet.</p>
+
+<h2>3. People detected, with timestamps</h2>
+
+<h3>Nov 4 – boat arrives <span class="tag clear">Owners</span></h3>
+<ul><li>About 4:38 PM: two men dock the Sportsman and rinse it.</li>
+<li>The red-tipped pole at the bow is a brush (confirmed by you).</li></ul>
+<figure><img src="boardings/2026-11-04_1638_dock2_sportsman-arrives.jpg"><figcaption>Nov 4, 4:38 PM – Sportsman arrives on the lift.</figcaption></figure>
+<figure><img src="boardings/2026-11-04_1700_dock2_two-men-docking.jpg"><figcaption>Nov 4, ~5:00 PM – two men securing the boat.</figcaption></figure>
+
+<h3>Nov 5 – work/cleaning session, boarded <span class="tag unsure">UNSURE</span></h3>
+<ul>
+<li>When: export labels 04:47–07:18, roughly 12:00–3:00 PM real time according to the earlier DW check. About 2.5 hours.</li>
+<li>The lift was lowered to deck level.</li>
+<li>A man in a white tee and white cap and a man in a light shirt boarded and knelt on the aft deck, scrubbing.</li>
+<li>A man in a navy tee and white cap worked the lift control from the dock. A man in a light-blue long-sleeve and jeans stood by the console.</li>
+<li>Brought aboard: a light-blue cooler, a white bucket and a small yellow box. The deck was clear again by label 06:59, and the boat was raised again afterwards.</li>
+<li><b>Open:</b> watch labels 06:40–06:59 in DW to see what was carried off.</li>
+</ul>
+<figure><img src="boardings/fullreview_nov05_kneeling-aft-deck_label052240.jpg"><figcaption>Nov 5, label 05:22:40 – man kneeling on the aft deck.</figcaption></figure>
+<figure><img src="boardings/fullreview_nov05_aboard-cooler_label055813.jpg"><figcaption>Nov 5, label 05:58:13 – light-blue cooler aboard.</figcaption></figure>
+<figure><img src="boardings/fullreview_nov05_kneeling-aft-deck_label064714.jpg"><figcaption>Nov 5, label 06:47:14 – still working aft; items leave the deck soon after.</figcaption></figure>
+<figure><img src="boardings/2026-11-05_1425_dock2_man-scrubbing-stern-pole-on-dock.jpg"><figcaption>Nov 5, 2:25 PM (DW clock) – scrubbing at the stern; the brush is on the dock.</figcaption></figure>
+
+<h3>Nov 6 – dock worker and lift crew; one man briefly aboard <span class="tag unsure">UNSURE</span></h3>
+<ul>
+<li><b>Morning (labels 04:00–05:36):</b> one man in a navy tee and white cap knelt on the dock by the lift base for about 1.5 hours, working with a hose or cable. He never went on the boat.</li>
+<li><b>Afternoon (labels 07:45–09:41, about 2:20–3:30 PM on the DW clock):</b> 3–4 men worked on the lift arms, cables and control.
+  <ul>
+  <li>They wore an orange tee with a large white back print, a grey tee with an orange round logo, and a light-grey tee.</li>
+  <li>The lift was lowered at label 08:53.</li>
+  <li>At labels 09:07–09:09 the grey-tee man stepped onto the aft deck and reached up to the T-top for about a minute. His hands look empty when he steps off.</li>
+  </ul></li>
+</ul>
+<figure><img src="boardings/fullreview_nov06_lift-crew_label081205.jpg"><figcaption>Nov 6, label 08:12:05 – lift crew at work.</figcaption></figure>
+<figure><img src="boardings/fullreview_nov06_crew-man-aboard_label090814.jpg"><figcaption>Nov 6, label 09:08:14 – crew man on the aft deck, reaching to the T-top.</figcaption></figure>
+<figure><img src="boardings/fullreview_nov06_crew-man-aboard_label091010.jpg"><figcaption>Nov 6, label 09:10:10 – back on the dock, hands look empty.</figcaption></figure>
+
+<h3>Nov 7 – two short visits, nobody boarded</h3>
+<ul>
+<li>Labels 00:39–00:53, morning light: two men and a dog. One squats at the stern from the lower dock for about 2 minutes, then all three leave.</li>
+<li>Labels 05:24–05:47, late afternoon: the same two outfits. The light-blue-shirt man works the yellow lift control. The navy-shirt man handles the stern from the dock for about a minute.</li>
+<li>The cover stays on and nothing is carried. These look like the owners, but that isn't confirmed.</li>
+</ul>
+<figure><img src="boardings/fullreview_nov07_visitA_two-men-and-dog_strip.jpg"><figcaption>Nov 7, labels 00:43–00:52 – two men and a dog on the dock.</figcaption></figure>
+<figure><img src="boardings/fullreview_nov07_visitB_lift-controls-stern_strip.jpg"><figcaption>Nov 7, labels 05:24–05:47 – lift controls and the stern, from the dock.</figcaption></figure>
+
+<h3>Nov 9 – unknown visitor on the dock <span class="tag unsure">UNSURE</span> <span class="tag flag">FOLLOW UP</span></h3>
+<ul>
+<li>When: labels 02:33:52–02:38:35, about 5 minutes. The DOCK 3 frame of the same young man is at about 10:10 AM on the DW clock.</li>
+<li>Description: young man in a grey camo-pattern long-sleeve fishing shirt, grey shorts and sandals, with a black backpack and earbuds. He carried an orange bucket and set a small dark device on the dock.</li>
+<li>At about label 02:34:15 he reached up to the lift frame by the bow-side post, with his back to the camera.</li>
+<li>He never boarded, and the landing net is still on the lift afterwards.</li>
+<li><b>Open:</b> watch in DW what his hands did at the post. Ask the owner whether they know him; he may be a neighbour's guest fishing from the dock.</li>
+</ul>
+<figure><img src="boardings/fullreview_nov09_dock-visitor-bucket_label0233-0238.jpg"><figcaption>Nov 9, labels 02:33–02:38 – visitor with an orange bucket at the lift post.</figcaption></figure>
+<figure><img src="2026-11-09_1010_dock3_young-man-bucket-hose.jpg"><figcaption>Nov 9, ~10:10 AM (DW clock), DOCK 3 – the same young man.</figcaption></figure>
+
+<h3>Nov 10 – group fishing trip <span class="tag unsure">UNSURE</span> <span class="tag flag">FOLLOW UP</span></h3>
+<ul>
+<li>The times below are clock times: this day was recorded in full.</li>
+<li><b>Out, 9:20–9:36 AM:</b>
+  <ul>
+  <li>A man in a sage-green tee with a round white back logo lowered the lift and took the motor cover off.</li>
+  <li>A man in a light-blue long-sleeve fishing shirt and a man with a backpack loaded coolers, bags and a blue tote.</li>
+  <li>They left at 9:36 AM.</li>
+  </ul></li>
+<li><b>Back, about 3:23–4:13 PM:</b>
+  <ul>
+  <li>Four aboard, including a woman in a navy top.</li>
+  <li>They unloaded coolers, bags and the blue tote, hosed the deck, put the cover on and raised the boat by about 4:12 PM.</li>
+  </ul></li>
+<li><b>Open:</b> a gaff can't be picked out at this resolution. Ask the owner who went out and whether the gaff came back, and watch the unload (3:28–4:12 PM) in DW.</li>
+</ul>
+<figure><img src="boardings/fullreview_nov10_morning-departure_strip.jpg"><figcaption>Nov 10, 9:20–9:36 AM – loading and departure.</figcaption></figure>
+<figure><img src="boardings/fullreview_nov10_afternoon-return_strip.jpg"><figcaption>Nov 10, ~3:23–4:13 PM – return and unload.</figcaption></figure>
+
+<h3>Nov 14 – people on the dock by the stern, nobody boarded <span class="tag unsure">UNSURE</span></h3>
+<ul>
+<li><b>6:42–6:55 AM:</b> one person stood at the far left edge of the dock. Never came to the boat.</li>
+<li><b>3:19 PM:</b> a man in a red jacket and grey cap leaned in at the stern, by the landing net, at dock level.</li>
+<li><b>3:23–3:33 PM:</b> a woman with long fair hair and a person in dark clothes walked past the stern.</li>
+<li><b>3:46–3:55 PM:</b> two men stood on the dock under the raised boat:
+  <ul>
+  <li>One wore a red Helly Hansen-style jacket, grey cap and sunglasses. He talked on the phone and drank from a can.</li>
+  <li>One wore a navy jacket and white cap. He stood at the lift's stern ladder, reaching up toward the lift.</li>
+  <li>Neither climbed onto the boat. The boat stayed raised with the motor cover on. Nothing visible was carried away, but small items in hand can't be ruled out.</li>
+  </ul></li>
+<li><b>Timing:</b> this is right before the 3:54–4:08 PM camera disconnects in the system log. On DOCK 2, though, the video has no gap over 60 seconds that afternoon. The recording continued.</li>
+<li><b>Night:</b> 12:53 AM and 11:19–11:23 PM detections were a heron on the motor cover.</li>
+</ul>
+<figure><img src="fullreview/nov14-20/nov14_1519-1548_dock.jpg"><figcaption>Nov 14, 3:19–3:48 PM – red-jacket man at the stern (3:19), the woman passing (3:23), and a man standing at the left edge (3:46–3:47).</figcaption></figure>
+<figure><img src="fullreview/nov14-20/nov14_1548-1550_two-men.jpg"><figcaption>Nov 14, 3:48–3:50 PM – the two men under the raised boat. Neither boarded.</figcaption></figure>
+
+<h3>Nov 16 – lift worker in the morning; a man in a light-blue tee went aboard 1:22–1:30 PM <span class="tag unsure">UNSURE</span> <span class="tag flag">FOLLOW UP</span></h3>
+<ul>
+<li><b>10:53–11:33 AM:</b> a man in a black tee and shorts knelt on the dock at the lift's left post for about 40 minutes, with tools and a red toolbox. This looks like work on the lift. He didn't board.</li>
+<li><b>1:16–1:22 PM:</b> a man in a light-blue tee with a round logo on the back, grey cap, sunglasses, dark shorts and flip-flops looked at the lift from the dock.</li>
+<li><b>1:22–1:30 PM, aboard:</b> he climbed up the lift arm onto the raised boat.
+  <ul>
+  <li>He knelt on the aft deck by the leaning post for about 3 minutes (1:24–1:27).</li>
+  <li>He went forward to the console and leaned into it (1:26–1:30).</li>
+  <li>He climbed back down the lift arm at 1:30:33 and walked off along the dock at 1:30:41.</li>
+  </ul></li>
+<li>In the frames, his hands don't show a long item when he leaves, but this was not checked frame by frame.</li>
+<li><b>Open:</b> ask the owner whether they know this man or sent someone to the boat that day. Watch 1:22–1:31 PM Nov 16 in DW to see what he did at the console and whether he carried anything off.</li>
+<li>Later detections that day were the lift ladder and the motor cover.</li>
+</ul>
+<figure><img src="fullreview/nov14-20/nov16_1053-1133_lift-worker.jpg"><figcaption>Nov 16, 10:53–11:33 AM – a man working at the lift post with a red toolbox. He didn't board.</figcaption></figure>
+<figure><img src="fullreview/nov14-20/nov16_1316-1322_blue-tee-dock.jpg"><figcaption>Nov 16, 1:16–1:22 PM – the light-blue-tee man on the dock before he climbed up.</figcaption></figure>
+<figure><img src="fullreview/nov14-20/nov16_1320-1332_blue-tee-aboard.jpg"><figcaption>Nov 16, 1:21–1:31 PM – aboard: kneeling by the leaning post (1:24–1:27), then at the console (1:26–1:30).</figcaption></figure>
+<figure><img src="fullreview/nov14-20/nov16_1330_blue-tee-off.jpg"><figcaption>Nov 16, 1:29:55–1:31:39 – he climbs down the lift arm and walks away.</figcaption></figure>
+
+<h3>Nov 17 – lift worker on the dock, nobody boarded <span class="tag unsure">UNSURE</span></h3>
+<ul>
+<li><b>1:09–2:00 PM:</b> a man in a black tee and shorts worked at the lift post and control box, sometimes kneeling. He looks like the Nov 16 morning worker. He didn't board.</li>
+<li>All other detections were the lift ladder, the T-top and the motor cover.</li>
+</ul>
+<figure><img src="fullreview/nov14-20/nov17_1309-1400_lift-worker.jpg"><figcaption>Nov 17, 1:09–2:00 PM – a man at the lift post.</figcaption></figure>
+
+<h3>Nov 18 – nobody near the boat</h3>
+<ul>
+<li>Evening detections (7:42–9:16 PM) were rain streaks over the lift's control box, and the motor cover. All the others were the lift ladder or the T-top.</li>
+</ul>
+<p class="note"><b>No people in these detections</b> (screenshots left out): Nov 18, 7:42–9:16 PM: rain streaks over the lift's control box, and the motor cover.</p>
+
+<h3>Nov 19 – two men lowered the boat, went aboard and raised it again, 1:49–2:07 PM <span class="tag unsure">UNSURE</span> <span class="tag flag">FOLLOW UP</span></h3>
+<ul>
+<li><b>Who:</b>
+  <ul>
+  <li>A man in a red long-sleeve fishing shirt, blue cap, grey shorts and flip-flops, carrying a black bag when he arrived.</li>
+  <li>A man in a navy tee with a white boat logo on the back, grey cap and jeans.</li>
+  </ul></li>
+<li><b>What they did:</b>
+  <ul>
+  <li>1:49 PM: the red-shirt man used the lift's control box and lowered the boat.</li>
+  <li>1:57–1:59 PM: the navy-tee man was aboard at the console.</li>
+  <li>About 2:05 PM: the red-shirt man was aboard at the console.</li>
+  <li>2:00–2:01 PM: the navy-tee man hung the landing net back on the lift arm. The long pole in his hands is the net's handle, not a gaff.</li>
+  <li>About 2:06 PM: the boat was raised again with the motor cover still on.</li>
+  <li>2:07 PM: the navy-tee man walked away.</li>
+  </ul></li>
+<li>The boat never left the lift. The visit lasted about 17 minutes.</li>
+<li><b>Night:</b> 4:14–5:11 AM and 10:05–10:28 PM detections were the control box and the motor cover.</li>
+<li><b>Open:</b> ask the owner who these two were (they may be the owners themselves). Watch 1:49–2:07 PM in DW to see what was taken from the console and what was in the black bag.</li>
+</ul>
+<figure><img src="fullreview/nov14-20/nov19_1349-1407_lift-lowered.jpg"><figcaption>Nov 19, 1:49–2:07 PM – the lift lowered, both men aboard in turn, then raised again.</figcaption></figure>
+<figure><img src="fullreview/nov14-20/nov19_1356-1401_landing-net.jpg"><figcaption>Nov 19, 1:56–2:01 PM – the long pole is the landing net being hung back on the lift arm.</figcaption></figure>
+
+<h3>Nov 20 – the owners' trip <span class="tag clear">Owners</span></h3>
+<ul>
+<li><b>Out, 11:46 AM – 12:12 PM:</b> two men loaded coolers, bags and rods, took the motor cover off, lowered the lift and left at about 12:11 PM. One wore a blue long-sleeve fishing shirt, the other a light-grey long-sleeve shirt.</li>
+<li><b>Back, about 4:48 PM:</b> a bald man in black with a dog met the boat on the dock (4:48–4:50 PM, <span class="tag unsure">UNSURE</span>, probably a neighbour). He didn't board.</li>
+<li><b>Cleanup, 5:00–5:50 PM:</b> the two men hosed the boat, unloaded, put the motor cover back on and raised the boat by 5:43 PM.</li>
+</ul>
+<figure><img src="fullreview/nov14-20/nov20_1146-1212_departure.jpg"><figcaption>Nov 20, 11:46 AM – 12:12 PM – loading and departure.</figcaption></figure>
+<figure><img src="fullreview/nov14-20/nov20_1633-1750_return.jpg"><figcaption>Nov 20, 4:33–5:50 PM – lift empty, return, the man with the dog, cleanup, cover back on.</figcaption></figure>
+
+<h3>Nov 8, 11, 12, 13, 15 and 18 – nobody near the boat</h3>
+<ul>
+<li>The boat stayed raised with the motor cover on.</li>
+<li>All detections were false alarms: Nov 11 had 917, Nov 12 had 9,999, Nov 13 had 7,704, Nov 15 had 3,780 and Nov 18 had 3,683. Almost all were the motor cover, the lift ladder or the T-top, and they were checked by eye.</li>
+</ul>
+<p class="note"><b>No people in these detections</b> (screenshots left out): Nov 12: the strongest detections were a speck at the edge of the frame and the grey motor cover, which the detector reads as a hooded person.</p>
+<p class="note"><b>No people in these detections</b> (screenshots left out): Nov 15: about 1,400 daytime detections, all the grey motor cover. The full day was recorded, with no gap over 5 seconds.</p>
+
+<h2>4. Anything suspicious</h2>
+<table>
+<tr><th>Item</th><th>What was found</th><th>Status</th></tr>
+<tr><td>Late-night activity</td><td>None in the exported footage. Every night-time detection on Nov 10–20 was checked: far-shore lights, rain over the control box (Nov 18), a heron on the motor cover (Nov 14, 16), the T-top at dawn, or the motor cover. The Nov 4–9 nights are being checked from the playback capture.</td><td><span class="tag clear">CLEAR</span></td></tr>
+<tr><td>Interruptions in the footage</td><td>
+<ul>
+<li>Recording server restarted Nov 9 at 10:46 AM.</li>
+<li>Dock cameras dropped repeatedly Nov 9, 11:27 AM – 12:43 PM.</li>
+<li>All three dock cameras disconnected Nov 14, 3:54–4:08 PM, right after a group of five unloaded on DOCK 3 and two men stood under the Sportsman (3:46–3:55 PM). The DOCK 2 video itself shows no gap over 60 seconds then.</li>
+<li>The Nov 4–9 night hours are in DW only as the low-resolution copy, which export skips (now being checked by playback).</li>
+<li>Recording changed around Nov 9 (sharp copy around the clock from ~2:45 PM, different key-frame spacing): a possible settings change.</li>
+</ul>
+Who changed settings, if anyone, is only in the Audit Trail. The DW login on this computer is in the Advanced Viewers group, so the Audit Trail is hidden; a DW administrator has to open it.</td><td><span class="tag flag">CHECK</span></td></tr>
+<tr><td>Strangers at the boat</td><td>Nov 9 young man with a bucket at the lift post, about 10:10 AM. Nov 14 two men in red and navy jackets under the boat, 3:46–3:55 PM. Nov 20 bald man with a dog at the return. None boarded.</td><td><span class="tag unsure">ASK OWNER</span></td></tr>
+<tr><td>Non-owners aboard</td><td>Nov 5 work session (two men aboard about 2.5 h). Nov 6 lift-crew man aboard about 1 min, hands look empty. <b>Nov 16 light-blue-tee man aboard alone 1:22–1:30 PM, at the console.</b> Nov 19 red-shirt and navy-tee men lowered the lift and went aboard 1:49–2:07 PM.</td><td><span class="tag flag">ASK OWNER</span></td></tr>
+<tr><td>Gaff leaving the boat</td><td>Not seen. Small items can't be told apart in the Nov 5, 10 and 20 unloads or at the console visits on Nov 16 and 19. The long pole on Nov 19 is the landing net.</td><td><span class="tag todo">WATCH IN DW</span></td></tr>
+</table>
+<p class="note"><b>No people in these detections</b> (screenshots left out): Night-time detections: the T-top at dawn (Nov 10), far-shore lights (Nov 12–13), a heron on the motor cover (Nov 14, 16), rain over the control box (Nov 18) and the motor cover itself.</p>
+
+<h2>5. Still to do</h2>
+<ul>
+<li>Nov 4–9 low-resolution hours: captured; the detector is running on the frames, then an eye check.</li>
+<li>Audit Trail: a DW administrator opens Main Menu → Audit Trail and checks Nov 9 (about 9 AM – 4 PM), Nov 14 (3:30–4:30 PM), and any DOCK 1/2/3 recording or motion-setting changes.</li>
+<li>In DW:
+  <ul>
+  <li>Check the three midnight gaps (Nov 4/5, 5/6, 13/14).</li>
+  <li>Watch the Nov 5 labels 06:40–06:59, the Nov 9 post moment, the Nov 10 unload, <b>Nov 16 1:22–1:31 PM</b> (console visit) and <b>Nov 19 1:49–2:07 PM</b> (lift lowered).</li>
+  </ul></li>
+<li>Questions for the owner: who went out on Nov 10 and did the gaff come back; who worked on the boat and lift on Nov 5, 6, 16 and 17; who the Nov 16 light-blue-tee man is; who the Nov 19 pair are; do they know the Nov 9 visitor; when they last saw the gaff.</li>
+</ul>
+<p class="sub">Screenshots that showed no people (the motor cover, lift ladder, lights, rain, birds) are left out; each is described in the text instead. People are described, not identified; anyone not confirmed as an owner is marked UNSURE.</p>
+</body></html>
